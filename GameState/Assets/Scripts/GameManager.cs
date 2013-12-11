@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -17,34 +17,38 @@ public class GameManager : MonoBehaviour {
 	/// </summary>
 	public static int parentServerId=0;
 
+	private static GameObject returnButton;
+
+	void Awake(){
+		returnButton=GameObject.Find("Retrun");
+	}
 	void Start () {
 		parentServerId=1;
 		gameState=GameState.ServerList;
-		Data data=new Data();
-		list=data.GetData();
-		//lambda表达式获取大区
-		List<ServerEntity> listParent=list.FindAll(en=>en.ParentId==0);
-		//大区
-		for (int i = listParent.Count-1; i >= 0; i--) {
-			GameObject obj= Resources.Load("BigServer") as GameObject;
-			obj=NGUITools.AddChild(GameObject.Find("AnchorLeft"),obj);
-			obj.name="bigServer"+listParent[i].ServerId;
-			obj.GetComponentInChildren<UILabel>().text=listParent[i].ServerName;
-		}
-
-		GameObject.Find("AnchorLeft").GetComponent<UIGrid>().repositionNow=true;	
-
 		Change();
+
+		 
 	}
 	 
 
 	public static void Change(){
 		switch (gameState) {
 			case GameState.ServerList:
-				GameObject []objs=GameObject.FindGameObjectsWithTag("SmallServer");
-				foreach (var item in objs) {
-					Destroy(item);
+				DestroyButton();
+				NGUITools.SetActive(returnButton,false);
+				Data data=new Data();
+				list=data.GetData();
+				//lambda表达式获取大区
+				List<ServerEntity> listParent=list.FindAll(en=>en.ParentId==0);
+				//大区
+				for (int i = listParent.Count-1; i >= 0; i--) {
+					GameObject obj= Resources.Load("BigServer") as GameObject;
+					obj=NGUITools.AddChild(GameObject.Find("AnchorLeft"),obj);
+					obj.name="bigServer"+listParent[i].ServerId;
+					obj.GetComponentInChildren<UILabel>().text=listParent[i].ServerName;
 				}
+				
+				GameObject.Find("AnchorLeft").GetComponent<UIGrid>().repositionNow=true;	
 
 				//显示小区
 				List<ServerEntity> subList=new List<ServerEntity>();
@@ -56,16 +60,39 @@ public class GameManager : MonoBehaviour {
 					obj.GetComponentInChildren<UILabel>().text=subList[i].ServerName;
 				}
 				GameObject.Find("AnchorRight").GetComponent<UIGrid>().repositionNow=true;	
-				break;
+			break;
+
+			case GameState.Login:
+				NGUITools.SetActive(returnButton,true);
+				UIButton []	games =GameObject.Find("AnchorLeft").GetComponentsInChildren<UIButton>();
+				foreach (var item in games) {
+					Destroy(item.gameObject);
+				}
+				games =GameObject.Find("AnchorRight").GetComponentsInChildren<UIButton>();
+				foreach (var item in games) {
+					Destroy(item.gameObject);
+				}
+			break;
+
 			default:
 			break;
 		}
-			
+	}
 
+	static void DestroyButton(){
+		UIButton []	games =GameObject.Find("AnchorLeft").GetComponentsInChildren<UIButton>();
+		foreach (var item in games) {
+			Destroy(item.gameObject);
+		}
+		games =GameObject.Find("AnchorRight").GetComponentsInChildren<UIButton>();
+		foreach (var item in games) {
+			Destroy(item.gameObject);
+		}
 	}
 
 }
 public enum GameState{
 	ServerList,
-	HeroList
+	HeroList,
+	Login
 }
