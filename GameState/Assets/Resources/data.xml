@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<parentServer serverId="1" serverName="电信一区">
+		<server serverId="11" serverName="卡珊德拉" ></server>
+		<server serverId="12" serverName="冰霜巨魔" ></server>
+		<server serverId="13" serverName="布兰卡德" ></server>
+		<server serverId="14" serverName="思科菲奥" ></server>
+		<server serverId="15" serverName="魔翼护腿" ></server>
+		<server serverId="11" serverName="卡珊德拉" ></server>
+		<server serverId="12" serverName="冰霜巨魔" ></server>
+		<server serverId="13" serverName="布兰卡德" ></server>
+		<server serverId="14" serverName="思科菲奥" ></server>
+		<server serverId="15" serverName="魔翼护腿" ></server>
+		<server serverId="11" serverName="卡珊德拉" ></server>
+		<server serverId="12" serverName="冰霜巨魔" ></server>
+		<server serverId="13" serverName="布兰卡德" ></server>
+		<server serverId="14" serverName="思科菲奥" ></server>
+		<server serverId="15" serverName="魔翼护腿" ></server>
+		<server serverId="11" serverName="卡珊德拉" ></server>
+		<server serverId="12" serverName="冰霜巨魔" ></server>
+		<server serverId="13" serverName="布兰卡德" ></server>
+		<server serverId="14" serverName="思科菲奥" ></server>
+		<server serverId="15" serverName="魔翼护腿" ></server>
+	</parentServer>
+	
+	<parentServer serverId="2" serverName="电信二区">
+		<server serverId="21" serverName="水晶之刺"></server>
+		<server serverId="22" serverName="浸毒之骨"></server>
+		<server serverId="23" serverName="激流之傲"></server>
+		<server serverId="24" serverName="河流之傲"></server>
+		<server serverId="25" serverName="狂热之刃"></server>
+		<server serverId="26" serverName="塔恩之环"></server>
+		<server serverId="27" serverName="雏龙之翼"></server>
+		<server serverId="28" serverName="冰川之拳"></server>
+		<server serverId="29" serverName="冰霜之刃"></server>
+		<server serverId="21" serverName="水晶之刺"></server>
+		<server serverId="22" serverName="浸毒之骨"></server>
+		<server serverId="23" serverName="激流之傲"></server>
+		<server serverId="24" serverName="河流之傲"></server>
+		<server serverId="25" serverName="狂热之刃"></server>
+		<server serverId="26" serverName="塔恩之环"></server>
+		<server serverId="27" serverName="雏龙之翼"></server>
+		<server serverId="28" serverName="冰川之拳"></server>
+		<server serverId="29" serverName="冰霜之刃"></server>
+	</parentServer>
+	
+	<parentServer serverId="3" serverName="网通一区">
+		<server serverId="31" serverName="黑海岸"></server>
+		<server serverId="32" serverName="菲拉斯"></server>
+		<server serverId="33" serverName="泥沼泽"></server>
+		<server serverId="34" serverName="兽人族"></server>
+		<server serverId="35" serverName="地狱渊"></server>
+		<server serverId="31" serverName="黑海岸"></server>
+		<server serverId="32" serverName="菲拉斯"></server>
+		<server serverId="33" serverName="泥沼泽"></server>
+		<server serverId="34" serverName="兽人族"></server>
+		<server serverId="35" serverName="地狱渊"></server>
+	</parentServer>
+	
+	<parentServer serverId="4" serverName="网通二区">
+		<server serverId="41" serverName="黑海岸"></server>
+		<server serverId="42" serverName="菲拉斯"></server>
+		<server serverId="43" serverName="泥沼泽"></server>
+		<server serverId="44" serverName="兽人族"></server>
+		<server serverId="45" serverName="地狱渊"></server>
+	</parentServer>
+	<parentServer serverId="8" serverName="网通q区">
+		<server serverId="81" serverName="黑海岸8"></server>
+		<server serverId="82" serverName="菲拉斯8"></server>
+		<server serverId="83" serverName="泥沼泽8"></server>
+		<server serverId="84" serverName="兽人族8"></server>
+		<server serverId="85" serverName="地狱渊8"></server>
+	</parentServer>
+	<parentServer serverId="7" serverName="网通3区">
+		<server serverId="71" serverName="黑海岸3"></server>
+		<server serverId="72" serverName="菲拉斯3"></server>
+		<server serverId="73" serverName="泥沼泽3"></server>
+		<server serverId="74" serverName="兽人族3"></server>
+		<server serverId="75" serverName="地狱渊3"></server>
+	</parentServer>
+	<parentServer serverId="5" serverName="网通4区">
+		<server serverId="51" serverName="黑海岸5"></server>
+		<server serverId="52" serverName="菲拉斯5"></server>
+		<server serverId="53" serverName="泥沼泽5"></server>
+		<server serverId="54" serverName="兽人族5"></server>
+		<server serverId="55" serverName="地狱渊5"></server>
+		<server serverId="51" serverName="黑海岸5"></server>
+		<server serverId="52" serverName="菲拉斯5"></server>
+		<server serverId="53" serverName="泥沼泽5"></server>
+		<server serverId="54" serverName="兽人族5"></server>
+		<server serverId="55" serverName="地狱渊5"></server>
+		<server serverId="51" serverName="黑海岸5"></server>
+		<server serverId="52" serverName="菲拉斯5"></server>
+		<server serverId="53" serverName="泥沼泽5"></server>
+		<server serverId="54" serverName="兽人族5"></server>
+		<server serverId="55" serverName="地狱渊5"></server>
+	</parentServer>
+	<parentServer serverId="6" serverName="网通5区">
+		<server serverId="61" serverName="黑海岸6"></server>
+		<server serverId="62" serverName="菲拉斯6"></server>
+		<server serverId="63" serverName="泥沼泽6"></server>
+		<server serverId="64" serverName="兽人族6"></server>
+		<server serverId="65" serverName="地狱渊6"></server>
+		<server serverId="61" serverName="黑海岸6"></server>
+		<server serverId="62" serverName="菲拉斯6"></server>
+		<server serverId="63" serverName="泥沼泽6"></server>
+		<server serverId="64" serverName="兽人族6"></server>
+		<server serverId="65" serverName="地狱渊6"></server>
+		<server serverId="61" serverName="黑海岸6"></server>
+		<server serverId="62" serverName="菲拉斯6"></server>
+		<server serverId="63" serverName="泥沼泽6"></server>
+		<server serverId="64" serverName="兽人族6"></server>
+		<server serverId="65" serverName="地狱渊6"></server>
+	</parentServer>
+</root>

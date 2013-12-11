@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\data.xml">
+    <Files>
+      <File FileName="Assets\Resources\data.xml" Line="113" Column="52" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="46" Column="20" />
+      <File FileName="Assets\Scripts\Controllers\BigServerController.cs" Line="16" Column="31" />
+      <File FileName="Assets\Scripts\Test.cs" Line="14" Column="26" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="F:\U3D\4.3\2D\GameState\GameState\Assets\Scripts\Data\Data.cs" line="9" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
