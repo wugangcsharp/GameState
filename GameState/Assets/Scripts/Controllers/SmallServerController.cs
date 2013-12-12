@@ -15,6 +15,8 @@ public class SmallServerController : MonoBehaviour {
 
 	void OnClick(){
 		//login
+		string serverId=this.gameObject.name.Replace("smallServer","");
+		int.TryParse(serverId,out GameManager.serverId);
 		GameManager.gameState=GameState.Login;
 		GameManager.Change();
 	}

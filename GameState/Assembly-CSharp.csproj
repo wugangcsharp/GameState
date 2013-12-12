@@ -165,10 +165,14 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Scripts\Controllers\BigServerController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\HeroControllers.cs" />
+     <Compile Include="Assets\Scripts\Controllers\LoginControllers.cs" />
      <Compile Include="Assets\Scripts\Controllers\ReturnControllers.cs" />
      <Compile Include="Assets\Scripts\Controllers\SmallServerController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\StartGameControllers.cs" />
      <Compile Include="Assets\Scripts\Data\Data.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\SZUIRootScale.cs" />
      <Compile Include="Assets\Scripts\Test.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
