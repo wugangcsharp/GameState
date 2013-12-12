@@ -29,8 +29,16 @@ public class Data
     void LoadServerData()
     {
         XmlDocument xmlDoc = new XmlDocument();
-        xmlDoc.Load(Application.dataPath + @"/Resources/data.xml");
-        xmlDoc.Load(@"/Resources/data.xml"); 
+		#if UNITY_STANDALONE_WIN
+			xmlDoc.Load(@"Assets/Resources/data.xml");
+		#endif
+        
+		if(Application.isEditor){
+			xmlDoc.Load(Application.dataPath + @"/Resources/data.xml");
+		}
+		else if(Application.isWebPlayer){
+			xmlDoc.Load(@"/Resources/data.xml");
+		}
 
         //获取root下子节点
         XmlNodeList nodes = xmlDoc.SelectSingleNode("root").ChildNodes;

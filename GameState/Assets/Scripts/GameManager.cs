@@ -120,8 +120,17 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 	void OnGUI(){
-		//xmlDoc.Load(Application.dataPath + @"/Resources/data.xml"); 
-		GUI.Label(new Rect(100,100,500,100), @"/Resources/data.xml");
+		string path="";
+		#if UNITY_STANDALONE_WIN
+		path=@"Assets/Resources/data.xml";
+		#endif
+		
+		if(Application.isEditor){
+			path=Application.dataPath + @"/Resources/data.xml";
+		}
+		else if(Application.isWebPlayer){
+				path=@"/Resources/data.xml";
+		}
 
 	}
 
